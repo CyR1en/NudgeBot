@@ -5,7 +5,7 @@ import net.dv8tion.jda.core.events.message.MessageReceivedEvent
 import net.dv8tion.jda.core.hooks.ListenerAdapter
 
 
-public class NudlgeLsntr(private val bot: Bot) : ListenerAdapter() {
+class NudlgeLsntr(private val bot: Bot) : ListenerAdapter() {
 
     override fun onMessageReceived(event: MessageReceivedEvent?) {
         val content = event?.message!!.contentRaw
